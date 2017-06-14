@@ -26,6 +26,7 @@ RUN apt-get update \
 ADD tools/docker/supervisor/supervisord.conf /etc/supervisor/supervisord.conf
 ADD tools/docker/supervisor/conf.d/apps.conf /etc/supervisor/conf.d/apps.conf
 
+ADD tools/docker/scripts/entrypoint.sh /entrypoint.sh
 ADD tools/docker/scripts/start.sh /start.sh
 
 RUN chmod +x /*.sh
