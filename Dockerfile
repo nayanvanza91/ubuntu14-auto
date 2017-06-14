@@ -1,6 +1,6 @@
 from ubuntu:14.04
 
-MAINTAINER Nayan V. <nayan@krishtechnolabs.com>
+MAINTAINER Nayan V. <nayanvanza91@gmail.com>
 
 RUN apt-get update \
     && apt-get install -y language-pack-en-base \
@@ -30,6 +30,7 @@ ADD tools/docker/scripts/start.sh /start.sh
 
 RUN chmod +x /*.sh
 
-EXPOSE 22 80 443 3306
+EXPOSE 22 80 443 3306 8080 9200
 
+#ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
 CMD ["/bin/bash", "/start.sh"]
