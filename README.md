@@ -32,10 +32,8 @@ Also, we can map our container drive to host machine and secure our data.
 ### Use cases
 ----
 #### Lauch Container with name as server.
-docker run –i –t –d --hostname serve --name server nayanvanza91/ubuntu-auto
+docker run –i –t –d --hostname serve --name server nayanvanza91/ubuntu14-auto
 #### Lauch Container with name as server and map ports.
-docker run –i –t –d --hostname serve -p 1022:22 -p 1080:80 -p 1088:8080 -p 1036:3306 name server nayanvanza91/ubuntu-auto
+docker run –i –t –d --hostname serve -p 1022:22 -p 1080:80 -p 1088:8080 -p 1036:3306 name server nayanvanza91/ubuntu14-auto
 #### Lauch Container with name as server and map ports with directory mapping.
-docker run –i –t –d --hostname serve -p 1022:22 -p 1080:80 -p 1088:8080 -p 1036:3306 -v /srv/project/webroot:/var/www/html name server nayanvanza91/ubuntu-auto
-
-
+docker run –i –t –d --hostname serve -p 1022:22 -p 1080:80 -p 1088:8080 -p 1036:3306 -v /srv/project/webroot:/var/www/html name server nayanvanza91/ubuntu14-auto
