@@ -1,7 +1,4 @@
 # ubuntu14-auto
-Docker Based Solution - Ubuntu Server 14.04 LTS (Trusty Tahr).
-
-# ubuntu14-auto
 #### Docker Container - Ubuntu Server 14.04 LTS (Trusty Tahr).
 
 This Docker container gears with the basic dependency packages installation and foremost effort is on autostart system services on container, while the host system restart or docker service restart.
